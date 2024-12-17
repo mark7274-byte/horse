@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header, section {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+header {
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 400px;
+    padding-top: 20px;
+}
+
+h1, h2 {
+   color: rgb(204, 204, 204);
+}
+
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 16px;
+    color: rgb(226, 226, 226)
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#us {
+    font-size: 3.4rem;
+    height: auto;
+    width: auto;
+    color: #45a049;
+}
+.us {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    margin-top: 40px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+.Scard {
+    background-image: url("https://via.placeholder.com/150");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.Scard:hover {
+    transform: translateY(-10px);
+}
+.Scard-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Scard-content {
+    padding-top: 115%;
+}
+
+.Scard-content h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+#signing-form {
+    width: 400px;
+}
+.button {
+    display: block;
+    background-color: #7caf7a;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 10px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color:#519754;
+  }
+#but {
+    background-color: #45a049;
+    color:white;
+}
+  .button:hover {
+    background-color: #6a8d6b;
+    transform: translateY(-5px);
+  }
+
+  .button::after {
+    content: ' →';
+    display: inline-block;
+    margin-left: 8px;
+    transition: margin-left 0.2s ease;
+  }
+
+  .button:hover::after {
+    margin-left: 12px; /* Move arrow slightly on hover */
+  }
+  #dvor {
+    height: 600px;
+    width: 780px;
+    background-image: url(pexels.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+#dvor h1{
+    font-size: 1.6rem;
+    color: black;
+    padding-top: 150px;
+}
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Scroll Button specific styling */
+.scroll-btn {
+    margin-top: 20px;
+}
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-card {
+    background-color: #ffffff;
+    border-radius: 20px; /* Закруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden; /* Обрезка изображений */
+    text-align: center;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .service-card-content {
+    padding: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #4a784c; /* Тёмно-зелёный */
+  }
+
+  .service-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0 20px;
+  }
+
+  .service-card a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #82b388;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+
+  .service-card a:hover {
+    background-color: #6a8d6b;
+  }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+}
