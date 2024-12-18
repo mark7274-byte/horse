@@ -62,26 +62,34 @@ p {
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
+    max-height: 340px;
 }
 
 .card:hover {
     transform: translateY(-10px);
 }
 .card-img {
-    width: 100%;
-    height: 200px;
+    float: right; 
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 8px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
+    z-index: 3;
 }
 .card-content {
     padding: 20px;
 }
 
 .card-content h3 {
-    font-size: 1.6rem;
+    display: flex;
+    font-size: 1.4rem;
     color: #333;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .card-content p {
@@ -101,6 +109,7 @@ p {
     width: 100%;
     max-width: 600px;
     text-align: center;
+    max-height: 340px;
 }
 
 .Scard:hover {
@@ -112,13 +121,31 @@ p {
     object-fit: cover;
 }
 .Scard-content {
-    padding-top: 115%;
+    padding-top: 90%;
 }
 
 .Scard-content h3 {
     font-size: 1.6rem;
     color: #333;
     margin-bottom: 15px;
+}
+#card11 {
+    background-image: url(001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#card22 {
+background-image: url(XXXL.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#card33 {
+background-image: url(scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #signing-form {
     width: 400px;
@@ -193,7 +220,57 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-
+.guest-reviews {
+    background-color: #4d704d;
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  /* Review Card */
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-content {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .guest-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .guest-review {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .review-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
 /* Scroll Button specific styling */
 .scroll-btn {
     margin-top: 20px;
@@ -210,7 +287,7 @@ input[type="submit"]:hover {
     border-radius: 20px; /* Закруглённые углы */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
     width: 90%;
-    max-width: 400px;
+    max-width: 550px;
     overflow: hidden; /* Обрезка изображений */
     text-align: center;
   }
@@ -275,4 +352,12 @@ input[type="submit"]:hover {
     .card-content p {
         font-size: 0.9rem;
     }
+}
+.review-card {
+    flex-direction: row;
+    text-align: left;
+  }
+  .review-content {
+    margin-right: 20px;
+  }
 }
