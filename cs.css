@@ -47,6 +47,7 @@ p {
     height: auto;
     width: auto;
     color: #45a049;
+    padding-left: 10px;
 }
 .us {
     display: grid;
@@ -149,6 +150,19 @@ background-image: url(scaled.jpg);
 }
 #signing-form {
     width: 400px;
+    justify-items: center;
+    text-align: center;
+
+}
+#bgs {
+  background-image: url(2f16623d221d70fc4fea3daa370e9f61.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+height: 600px;
+  text-align: center;
+  justify-items: center;
+  padding-top: 30px;
 }
 .button {
     display: block;
@@ -228,6 +242,7 @@ input[type="submit"]:hover {
     text-align: center;
     max-width: 800px;
     margin: 30px auto;
+    margin-bottom: 10px;
   }
   
   .section-title {
@@ -245,6 +260,7 @@ input[type="submit"]:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 450px;
   }
   
   .review-content {
@@ -263,12 +279,14 @@ input[type="submit"]:hover {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: black;
   }
   
   .review-image img {
-    width: 150px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border-radius: 8px;
+
   }
   
 /* Scroll Button specific styling */
@@ -328,6 +346,7 @@ input[type="submit"]:hover {
   .service-card a:hover {
     background-color: #6a8d6b;
   }
+  
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .container {
@@ -360,4 +379,3 @@ input[type="submit"]:hover {
   .review-content {
     margin-right: 20px;
   }
-}
