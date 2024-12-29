@@ -89,8 +89,9 @@ p {
     display: flex;
     font-size: 1.4rem;
     color: #333;
-    margin-bottom: 15px;
+   padding-bottom: 15px;
     text-align: left;
+    margin: 0;
 }
 
 .card-content p {
@@ -128,7 +129,6 @@ p {
 .Scard-content h3 {
     font-size: 1.6rem;
     color: #333;
-    margin-bottom: 15px;
 }
 #card11 {
     background-image: url(001.jpg);
@@ -201,12 +201,13 @@ height: 600px;
   }
   #dvor {
     height: 600px;
-    width: 780px;
+    width: auto;
     background-image: url(pexels.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
+    border-radius: 16px;
   }
 #dvor h1{
     font-size: 1.6rem;
